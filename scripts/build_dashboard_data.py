@@ -40,18 +40,38 @@ def build_dashboard():
     rows = cursor.fetchall()
     conn.close()
 
+    # Nur Zeilen mit berechneter Veränderung
     rows = [r for r in rows if r[2] is not None]
 
-    rows_sorted = sorted(rows, key=lambda x: x[2], reverse=True)
+    # Positive Veränderungen
+    gainers_rows = sorted(
+        [r for r in rows if r[2] > 0],
+        key=lambda x: x[2],
+        reverse=True
+    )
+
+    # Negative Veränderungen
+    losers_rows = sorted(
+        [r for r in rows if r[2] < 0],
+        key=lambda x: x[2]
+    )
 
     gainers = [
-        {"ticker": r[0], "last_price": r[1], "change_percent": r[2]}
-        for r in rows_sorted[:10]
+        {
+            "ticker": r[0],
+            "last_price": r[1],
+            "change_percent": r[2]
+        }
+        for r in gainers_rows[:10]
     ]
 
     losers = [
-        {"ticker": r[0], "last_price": r[1], "change_percent": r[2]}
-        for r in sorted(rows_sorted, key=lambda x: x[2])[:10]
+        {
+            "ticker": r[0],
+            "last_price": r[1],
+            "change_percent": r[2]
+        }
+        for r in losers_rows[:10]
     ]
 
     dashboard = {
