@@ -1,0 +1,14 @@
+body{
+font-family:Arial;
+margin:40px;
+}
+
+table{
+border-collapse:collapse;
+margin-top:10px;
+}
+
+td,th{
+border:1px solid #ccc;
+padding:6px 10px;
+}
