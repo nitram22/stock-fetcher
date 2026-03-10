@@ -1,37 +1,35 @@
-document.addEventListener('DOMContentLoaded', () => {
-  fetch('dashboard.json')
-    .then(res => res.json())
-    .then(data => {
-      function fillTable(id, items, cls) {
-        const tableElem = document.getElementById(id);
-        if (!tableElem) return;
-        const tbody = tableElem.querySelector('tbody');
-        tbody.innerHTML = '';
+fetch("dashboard.json")
+.then(r=>r.json())
+.then(data=>{
 
-        if (!items || items.length === 0) {
-          tbody.innerHTML = '<tr><td colspan="3">No data yet</td></tr>';
-          return;
-        }
+document.getElementById("summary").innerHTML =
+`Total Value: $${data.total_value.toFixed(2)}`
 
-        items.forEach(item => {
-          const row = document.createElement('tr');
-          row.innerHTML = `
-            <td>${item.ticker}</td>
-            <td>${item.last_price.toFixed(2)}</td>
-            <td class="${cls}">${item.change_percent.toFixed(2)}%</td>
-          `;
-          tbody.appendChild(row);
-        });
-      }
 
-      fillTable('gainers', data.gainers, 'gain');
-      fillTable('losers', data.losers, 'loss');
-    })
-    .catch(err => {
-      console.error('Error loading dashboard:', err);
-      const gainers = document.getElementById('gainers')?.querySelector('tbody');
-      const losers = document.getElementById('losers')?.querySelector('tbody');
-      if (gainers) gainers.innerHTML = '<tr><td colspan="3">No data yet</td></tr>';
-      if (losers) losers.innerHTML = '<tr><td colspan="3">No data yet</td></tr>';
-    });
-});
+function fill(id, rows){
+
+const tbody = document.querySelector(`#${id} tbody`)
+
+tbody.innerHTML=""
+
+rows.forEach(r=>{
+
+const tr = document.createElement("tr")
+
+tr.innerHTML = `
+<td>${r.ticker}</td>
+<td>${r.price.toFixed(2)}</td>
+<td>${r.change_percent.toFixed(2)}%</td>
+`
+
+tbody.appendChild(tr)
+
+})
+
+}
+
+fill("gainers",data.gainers)
+fill("losers",data.losers)
+fill("portfolio",data.portfolio)
+
+})

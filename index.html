@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Depot Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<title>Stock Dashboard</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Depot Dashboard</h1>
-  <div class="dashboard">
-    <div>
-      <h2>Top 10 Gainers</h2>
-      <table id="gainers">
-        <thead>
-          <tr><th>Ticker</th><th>Last Price</th><th>Change %</th></tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-    <div>
-      <h2>Top 10 Losers</h2>
-      <table id="losers">
-        <thead>
-          <tr><th>Ticker</th><th>Last Price</th><th>Change %</th></tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-  </div>
-  <script src="dashboard.js" defer></script>
+
+<h1>Portfolio Dashboard</h1>
+
+<div id="summary"></div>
+
+<h2>Top Gainers</h2>
+<table id="gainers"><tbody></tbody></table>
+
+<h2>Top Losers</h2>
+<table id="losers"><tbody></tbody></table>
+
+<h2>Portfolio</h2>
+<table id="portfolio"><tbody></tbody></table>
+
+<script src="dashboard.js" defer></script>
+
 </body>
 </html>
