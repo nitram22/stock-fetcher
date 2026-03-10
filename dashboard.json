@@ -1,67 +1,67 @@
 {
   "gainers": [
     {
-      "ticker": "AAPL",
-      "last_price": 261.23,
-      "prev_close": 261.17,
-      "change_percent": 0.022973542137306072
-    },
-    {
-      "ticker": "GOOGL",
-      "last_price": 308.38,
-      "prev_close": 308.365,
-      "change_percent": 0.004864365281399107
+      "ticker": "MSFT",
+      "last_price": 406.645,
+      "prev_close": 405.74,
+      "change_percent": 0.22304924335780862
     },
     {
       "ticker": "AMZN",
-      "last_price": 214.2,
-      "prev_close": 214.28,
-      "change_percent": -0.03733432891544358
+      "last_price": 214.66,
+      "prev_close": 214.2,
+      "change_percent": 0.2147525676937479
     },
     {
-      "ticker": "MSFT",
-      "last_price": 405.74,
-      "prev_close": 405.9,
-      "change_percent": -0.03941857600393402
+      "ticker": "GOOGL",
+      "last_price": 308.855,
+      "prev_close": 308.38,
+      "change_percent": 0.15403074129321706
+    },
+    {
+      "ticker": "AAPL",
+      "last_price": 261.545,
+      "prev_close": 261.23,
+      "change_percent": 0.12058339394403313
     },
     {
       "ticker": "NVDA",
-      "last_price": 185.7334,
-      "prev_close": 185.9585,
-      "change_percent": -0.1210485135124222
+      "last_price": 185.835,
+      "prev_close": 185.7334,
+      "change_percent": 0.05470206220314656
     }
   ],
   "losers": [
     {
       "ticker": "NVDA",
-      "last_price": 185.7334,
-      "prev_close": 185.9585,
-      "change_percent": -0.1210485135124222
-    },
-    {
-      "ticker": "MSFT",
-      "last_price": 405.74,
-      "prev_close": 405.9,
-      "change_percent": -0.03941857600393402
-    },
-    {
-      "ticker": "AMZN",
-      "last_price": 214.2,
-      "prev_close": 214.28,
-      "change_percent": -0.03733432891544358
-    },
-    {
-      "ticker": "GOOGL",
-      "last_price": 308.38,
-      "prev_close": 308.365,
-      "change_percent": 0.004864365281399107
+      "last_price": 185.835,
+      "prev_close": 185.7334,
+      "change_percent": 0.05470206220314656
     },
     {
       "ticker": "AAPL",
-      "last_price": 261.23,
-      "prev_close": 261.17,
-      "change_percent": 0.022973542137306072
+      "last_price": 261.545,
+      "prev_close": 261.23,
+      "change_percent": 0.12058339394403313
+    },
+    {
+      "ticker": "GOOGL",
+      "last_price": 308.855,
+      "prev_close": 308.38,
+      "change_percent": 0.15403074129321706
+    },
+    {
+      "ticker": "AMZN",
+      "last_price": 214.66,
+      "prev_close": 214.2,
+      "change_percent": 0.2147525676937479
+    },
+    {
+      "ticker": "MSFT",
+      "last_price": 406.645,
+      "prev_close": 405.74,
+      "change_percent": 0.22304924335780862
     }
   ],
-  "timestamp": "2026-03-10T15:36:07.927913"
+  "timestamp": "2026-03-10T15:43:39.521267"
 }
