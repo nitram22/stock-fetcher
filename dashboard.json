@@ -1,0 +1,67 @@
+{
+  "gainers": [
+    {
+      "ticker": "AAPL",
+      "last_price": 261.29,
+      "prev_close": NaN,
+      "change_percent": 0.0
+    },
+    {
+      "ticker": "AMZN",
+      "last_price": 214.5222,
+      "prev_close": NaN,
+      "change_percent": 0.0
+    },
+    {
+      "ticker": "GOOGL",
+      "last_price": 308.3801,
+      "prev_close": NaN,
+      "change_percent": 0.0
+    },
+    {
+      "ticker": "MSFT",
+      "last_price": 406.18,
+      "prev_close": NaN,
+      "change_percent": 0.0
+    },
+    {
+      "ticker": "NVDA",
+      "last_price": 185.901,
+      "prev_close": NaN,
+      "change_percent": 0.0
+    }
+  ],
+  "losers": [
+    {
+      "ticker": "AAPL",
+      "last_price": 261.29,
+      "prev_close": NaN,
+      "change_percent": 0.0
+    },
+    {
+      "ticker": "AMZN",
+      "last_price": 214.5222,
+      "prev_close": NaN,
+      "change_percent": 0.0
+    },
+    {
+      "ticker": "GOOGL",
+      "last_price": 308.3801,
+      "prev_close": NaN,
+      "change_percent": 0.0
+    },
+    {
+      "ticker": "MSFT",
+      "last_price": 406.18,
+      "prev_close": NaN,
+      "change_percent": 0.0
+    },
+    {
+      "ticker": "NVDA",
+      "last_price": 185.901,
+      "prev_close": NaN,
+      "change_percent": 0.0
+    }
+  ],
+  "timestamp": "2026-03-10T15:28:27.340966"
+}
