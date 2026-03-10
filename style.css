@@ -1,14 +1,39 @@
-body{
-font-family:Arial;
-margin:40px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
 }
 
-table{
-border-collapse:collapse;
-margin-top:10px;
+h1, h2 {
+  text-align: center;
 }
 
-td,th{
-border:1px solid #ccc;
-padding:6px 10px;
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+table {
+  border-collapse: collapse;
+  width: 400px;
+  margin: 10px;
+  background: #fff;
+  box-shadow: 0 0 5px #ccc;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.gain {
+  color: green;
+  font-weight: bold;
+}
+
+.loss {
+  color: red;
+  font-weight: bold;
 }

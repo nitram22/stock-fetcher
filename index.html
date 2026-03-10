@@ -1,45 +1,32 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-<meta charset="UTF-8">
-
-<title>Portfolio Movement Dashboard</title>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <title>Depot Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<h1>Portfolio Movement Dashboard</h1>
-
-<h2 id="value"></h2>
-
-<h3>Movement Radar</h3>
-
-<table id="radar"></table>
-
-<h3>Top Gainers</h3>
-
-<table id="gainers"></table>
-
-<h3>Top Losers</h3>
-
-<table id="losers"></table>
-
-<h3>Depot Impact</h3>
-
-<table id="impact"></table>
-
-<h3>All Stocks</h3>
-
-<table id="stocks"></table>
-
-<script src="dashboard.js" defer></script>
+  <h1>Depot Dashboard</h1>
+  <div class="dashboard">
+    <div>
+      <h2>Top 10 Gainers</h2>
+      <table id="gainers">
+        <thead>
+          <tr><th>Ticker</th><th>Last Price</th><th>Change %</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div>
+      <h2>Top 10 Losers</h2>
+      <table id="losers">
+        <thead>
+          <tr><th>Ticker</th><th>Last Price</th><th>Change %</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="dashboard.js" defer></script>
 </body>
-
 </html>
