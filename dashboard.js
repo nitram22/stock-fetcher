@@ -1,4 +1,4 @@
-fetch('../data/dashboard.json')
+fetch('dashboard.json')
   .then(res => res.json())
   .then(data => {
     function fillTable(id, items, cls) {
