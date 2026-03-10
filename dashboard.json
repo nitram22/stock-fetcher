@@ -1,67 +1,67 @@
 {
   "gainers": [
     {
-      "ticker": "AAPL",
-      "last_price": 261.29,
-      "prev_close": NaN,
-      "change_percent": 0.0
-    },
-    {
-      "ticker": "AMZN",
-      "last_price": 214.5222,
-      "prev_close": NaN,
-      "change_percent": 0.0
+      "ticker": "NVDA",
+      "last_price": 185.9585,
+      "prev_close": 185.901,
+      "change_percent": 0.03093044147152308
     },
     {
       "ticker": "GOOGL",
-      "last_price": 308.3801,
-      "prev_close": NaN,
-      "change_percent": 0.0
+      "last_price": 308.365,
+      "prev_close": 308.3801,
+      "change_percent": -0.004896554609074353
+    },
+    {
+      "ticker": "AAPL",
+      "last_price": 261.17,
+      "prev_close": 261.29,
+      "change_percent": -0.045925982624671645
     },
     {
       "ticker": "MSFT",
-      "last_price": 406.18,
-      "prev_close": NaN,
-      "change_percent": 0.0
+      "last_price": 405.9,
+      "prev_close": 406.18,
+      "change_percent": -0.0689349549460903
     },
     {
-      "ticker": "NVDA",
-      "last_price": 185.901,
-      "prev_close": NaN,
-      "change_percent": 0.0
+      "ticker": "AMZN",
+      "last_price": 214.28,
+      "prev_close": 214.5222,
+      "change_percent": -0.11290206794448167
     }
   ],
   "losers": [
     {
-      "ticker": "AAPL",
-      "last_price": 261.29,
-      "prev_close": NaN,
-      "change_percent": 0.0
-    },
-    {
       "ticker": "AMZN",
-      "last_price": 214.5222,
-      "prev_close": NaN,
-      "change_percent": 0.0
-    },
-    {
-      "ticker": "GOOGL",
-      "last_price": 308.3801,
-      "prev_close": NaN,
-      "change_percent": 0.0
+      "last_price": 214.28,
+      "prev_close": 214.5222,
+      "change_percent": -0.11290206794448167
     },
     {
       "ticker": "MSFT",
-      "last_price": 406.18,
-      "prev_close": NaN,
-      "change_percent": 0.0
+      "last_price": 405.9,
+      "prev_close": 406.18,
+      "change_percent": -0.0689349549460903
+    },
+    {
+      "ticker": "AAPL",
+      "last_price": 261.17,
+      "prev_close": 261.29,
+      "change_percent": -0.045925982624671645
+    },
+    {
+      "ticker": "GOOGL",
+      "last_price": 308.365,
+      "prev_close": 308.3801,
+      "change_percent": -0.004896554609074353
     },
     {
       "ticker": "NVDA",
-      "last_price": 185.901,
-      "prev_close": NaN,
-      "change_percent": 0.0
+      "last_price": 185.9585,
+      "prev_close": 185.901,
+      "change_percent": 0.03093044147152308
     }
   ],
-  "timestamp": "2026-03-10T15:28:27.340966"
+  "timestamp": "2026-03-10T15:30:36.705648"
 }
