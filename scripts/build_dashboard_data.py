@@ -2,18 +2,22 @@ import sqlite3
 import json
 from pathlib import Path
 
-DATA_DIR = Path(__file__).parent.parent / "data"
-DB_PATH = DATA_DIR / "market.db"
-DASHBOARD_PATH = DATA_DIR / "dashboard.json"
+BASE = Path(__file__).parent.parent
+
+DATA = BASE / "data"
+CONFIG = BASE / "config/portfolio.json"
+
+DB = DATA / "market.db"
+OUT = DATA / "dashboard.json"
 
 
 def build_dashboard():
 
-    if not DB_PATH.exists():
-        print("Database not found")
-        return
+    with open(CONFIG) as f:
+        portfolio = json.load(f)
 
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(DB)
+
     cursor = conn.cursor()
 
     cursor.execute("""
@@ -37,51 +41,42 @@ def build_dashboard():
     )
     """)
 
-    rows = cursor.fetchall()
+    rows = [r for r in cursor.fetchall() if r[2] is not None]
+
     conn.close()
 
-    # Nur Zeilen mit berechneter Veränderung
-    rows = [r for r in rows if r[2] is not None]
+    gainers = sorted([r for r in rows if r[2] > 0], key=lambda x: x[2], reverse=True)
+    losers = sorted([r for r in rows if r[2] < 0], key=lambda x: x[2])
+    biggest = sorted(rows, key=lambda x: abs(x[2]), reverse=True)
 
-    # Positive Veränderungen
-    gainers_rows = sorted(
-        [r for r in rows if r[2] > 0],
-        key=lambda x: x[2],
-        reverse=True
-    )
+    portfolio_table = []
+    total_value = 0
 
-    # Negative Veränderungen
-    losers_rows = sorted(
-        [r for r in rows if r[2] < 0],
-        key=lambda x: x[2]
-    )
+    for ticker, price, change in rows:
 
-    gainers = [
-        {
-            "ticker": r[0],
-            "last_price": r[1],
-            "change_percent": r[2]
-        }
-        for r in gainers_rows[:10]
-    ]
+        shares = portfolio.get(ticker, 0)
 
-    losers = [
-        {
-            "ticker": r[0],
-            "last_price": r[1],
-            "change_percent": r[2]
-        }
-        for r in losers_rows[:10]
-    ]
+        value = shares * price
+
+        total_value += value
+
+        portfolio_table.append({
+            "ticker": ticker,
+            "shares": shares,
+            "price": price,
+            "value": value,
+            "change_percent": change
+        })
 
     dashboard = {
-        "gainers": gainers,
-        "losers": losers
+        "gainers": gainers[:10],
+        "losers": losers[:10],
+        "biggest_moves": biggest[:10],
+        "portfolio": portfolio_table,
+        "total_value": total_value
     }
 
-    DATA_DIR.mkdir(exist_ok=True)
-
-    with open(DASHBOARD_PATH, "w") as f:
+    with open(OUT, "w") as f:
         json.dump(dashboard, f, indent=2)
 
 

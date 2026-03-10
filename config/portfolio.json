@@ -1,18 +1,16 @@
 {
-  "stocks": [
-    {"ticker": "AAPL", "shares": 1, "buy_price": 124},
-    {"ticker": "AMZN", "shares": 1, "buy_price": 116},
-    {"ticker": "BUD", "shares": 1, "buy_price": 44},
-    {"ticker": "BAS.DE", "shares": 1, "buy_price": 50},
-    {"ticker": "KO", "shares": 1, "buy_price": 46},
-    {"ticker": "CVS", "shares": 1, "buy_price": 96},
-    {"ticker": "DIS", "shares": 1, "buy_price": 108},
-    {"ticker": "HPHA.F", "shares": 1, "buy_price": 3},
-    {"ticker": "LHA.F", "shares": 1, "buy_price": 12},
-    {"ticker": "MZX.DE", "shares": 1, "buy_price": 7},
-    {"ticker": "NVDA", "shares": 1, "buy_price": 138},
-    {"ticker": "SIE.DE", "shares": 1, "buy_price": 261},
-    {"ticker": "TSLA", "shares": 1, "buy_price": 120},
-    {"ticker": "DG.PA", "shares": 1, "buy_price": 107}
-  ]
+  "AAPL": 1,
+  "AMZN": 1,
+  "BUD": 1,
+  "BAS.DE": 1,
+  "KO": 1,
+  "CVS": 1,
+  "DIS": 1,
+  "HPHA.F": 1,
+  "LHA.F": 1,
+  "MZX.DE": 1,
+  "NVDA": 1,
+  "SIE.DE": 1,
+  "TSLA": 1,
+  "DG.PA": 1
 }
