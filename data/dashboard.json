@@ -1,7 +1,29 @@
 {
-  "gainers": [],
-  "losers": [],
+  "gainers": [
+    [
+      "LHA.F",
+      8.244,
+      1.4271653543307043
+    ]
+  ],
+  "losers": [
+    [
+      "HPHA.F",
+      2.97,
+      -0.6688963210702347
+    ]
+  ],
   "biggest_moves": [
+    [
+      "LHA.F",
+      8.244,
+      1.4271653543307043
+    ],
+    [
+      "HPHA.F",
+      2.97,
+      -0.6688963210702347
+    ],
     [
       "AAPL",
       260.83,
@@ -35,16 +57,6 @@
     [
       "DIS",
       101.32,
-      0.0
-    ],
-    [
-      "HPHA.F",
-      2.99,
-      0.0
-    ],
-    [
-      "LHA.F",
-      8.128,
       0.0
     ],
     [
@@ -106,16 +118,16 @@
     {
       "ticker": "HPHA.F",
       "shares": 1,
-      "price": 2.99,
-      "value": 2.99,
-      "change_percent": 0.0
+      "price": 2.97,
+      "value": 2.97,
+      "change_percent": -0.6688963210702347
     },
     {
       "ticker": "LHA.F",
       "shares": 1,
-      "price": 8.128,
-      "value": 8.128,
-      "change_percent": 0.0
+      "price": 8.244,
+      "value": 8.244,
+      "change_percent": 1.4271653543307043
     },
     {
       "ticker": "MZX.DE",
@@ -153,5 +165,5 @@
       "change_percent": 0.0
     }
   ],
-  "total_value": 1820.503
+  "total_value": 1820.599
 }
