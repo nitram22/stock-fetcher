@@ -2,81 +2,138 @@ import sqlite3
 import json
 from pathlib import Path
 
-BASE = Path(__file__).parent.parent
+DATA_DIR = Path(__file__).parent.parent / "data"
+CONFIG = Path(__file__).parent.parent / "config" / "portfolio.json"
 
-DATA = BASE / "data"
-CONFIG = BASE / "config/portfolio.json"
+DB_PATH = DATA_DIR / "market.db"
+DASHBOARD_PATH = DATA_DIR / "dashboard.json"
 
-DB = DATA / "market.db"
-OUT = DATA / "dashboard.json"
+
+def load_portfolio():
+    with open(CONFIG) as f:
+        return json.load(f)
 
 
 def build_dashboard():
 
-    with open(CONFIG) as f:
-        portfolio = json.load(f)
+    portfolio_config = load_portfolio()
 
-    conn = sqlite3.connect(DB)
-
+    conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
     cursor.execute("""
     SELECT
-        p1.ticker,
-        p1.price,
-        ((p1.price - p2.price) / p2.price) * 100 as change_percent
-    FROM prices p1
-    LEFT JOIN prices p2
-    ON p1.ticker = p2.ticker
-    AND p2.timestamp = (
-        SELECT MAX(timestamp)
+        ticker,
+        price,
+        ((price - prev_price) / prev_price) * 100 as change_percent
+    FROM (
+        SELECT
+            ticker,
+            price,
+            LAG(price) OVER (PARTITION BY ticker ORDER BY timestamp) as prev_price,
+            ROW_NUMBER() OVER (PARTITION BY ticker ORDER BY timestamp DESC) as rn
         FROM prices
-        WHERE ticker = p1.ticker
-        AND timestamp < p1.timestamp
     )
-    WHERE p1.timestamp = (
-        SELECT MAX(timestamp)
-        FROM prices p3
-        WHERE p3.ticker = p1.ticker
-    )
+    WHERE rn = 1
     """)
 
-    rows = [r for r in cursor.fetchall() if r[2] is not None]
-
+    rows = cursor.fetchall()
     conn.close()
 
-    gainers = sorted([r for r in rows if r[2] > 0], key=lambda x: x[2], reverse=True)
-    losers = sorted([r for r in rows if r[2] < 0], key=lambda x: x[2])
-    biggest = sorted(rows, key=lambda x: abs(x[2]), reverse=True)
+    rows = [r for r in rows if r[2] is not None]
 
-    portfolio_table = []
+    # -----------------------
+    # Gainers
+    # -----------------------
+
+    gainers = [
+        {
+            "ticker": r[0],
+            "price": r[1],
+            "change_percent": r[2]
+        }
+        for r in sorted(
+            [r for r in rows if r[2] > 0],
+            key=lambda x: x[2],
+            reverse=True
+        )
+    ][:10]
+
+    # -----------------------
+    # Losers
+    # -----------------------
+
+    losers = [
+        {
+            "ticker": r[0],
+            "price": r[1],
+            "change_percent": r[2]
+        }
+        for r in sorted(
+            [r for r in rows if r[2] < 0],
+            key=lambda x: x[2]
+        )
+    ][:10]
+
+    # -----------------------
+    # Biggest moves
+    # -----------------------
+
+    biggest_moves = [
+        {
+            "ticker": r[0],
+            "price": r[1],
+            "change_percent": r[2]
+        }
+        for r in sorted(
+            rows,
+            key=lambda x: abs(x[2]),
+            reverse=True
+        )
+    ][:10]
+
+    # -----------------------
+    # Portfolio
+    # -----------------------
+
+    portfolio = []
     total_value = 0
 
-    for ticker, price, change in rows:
+    for ticker, shares in portfolio_config.items():
 
-        shares = portfolio.get(ticker, 0)
+        match = next((r for r in rows if r[0] == ticker), None)
 
-        value = shares * price
+        if match:
 
-        total_value += value
+            price = match[1]
+            change = match[2]
 
-        portfolio_table.append({
-            "ticker": ticker,
-            "shares": shares,
-            "price": price,
-            "value": value,
-            "change_percent": change
-        })
+            value = price * shares
+            total_value += value
+
+            portfolio.append({
+                "ticker": ticker,
+                "shares": shares,
+                "price": price,
+                "value": value,
+                "change_percent": change
+            })
+
+    # -----------------------
+    # Dashboard JSON
+    # -----------------------
 
     dashboard = {
-        "gainers": gainers[:10],
-        "losers": losers[:10],
-        "biggest_moves": biggest[:10],
-        "portfolio": portfolio_table,
+        "gainers": gainers,
+        "losers": losers,
+        "biggest_moves": biggest_moves,
+        "portfolio": portfolio,
         "total_value": total_value
     }
 
-    with open(OUT, "w") as f:
+    DATA_DIR.mkdir(exist_ok=True)
+
+    with open(DASHBOARD_PATH, "w") as f:
         json.dump(dashboard, f, indent=2)
 
 
