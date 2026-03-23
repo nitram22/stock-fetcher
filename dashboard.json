@@ -1,18 +1,7 @@
 {
-  "gainers": [
-    {
-      "ticker": "NVDA",
-      "price": 172.93,
-      "change_percent": 0.13317892298785072
-    }
-  ],
+  "gainers": [],
   "losers": [],
   "biggest_moves": [
-    {
-      "ticker": "NVDA",
-      "price": 172.93,
-      "change_percent": 0.13317892298785072
-    },
     {
       "ticker": "AAPL",
       "price": 247.99,
@@ -56,6 +45,11 @@
     {
       "ticker": "KO",
       "price": 74.75,
+      "change_percent": 0.0
+    },
+    {
+      "ticker": "LHA.F",
+      "price": 7.314,
       "change_percent": 0.0
     }
   ],
@@ -135,7 +129,7 @@
       "shares": 1,
       "price": 172.93,
       "value": 172.93,
-      "change_percent": 0.13317892298785072
+      "change_percent": 0.0
     },
     {
       "ticker": "SIE.DE",
