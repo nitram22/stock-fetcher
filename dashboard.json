@@ -2,47 +2,47 @@
   "gainers": [
     {
       "ticker": "BAS.DE",
-      "price": 53.66,
-      "change_percent": 0.2803214352457458
+      "price": 54.17,
+      "change_percent": 0.9504286246738821
+    },
+    {
+      "ticker": "SIE.DE",
+      "price": 242.65,
+      "change_percent": 0.6428867689755335
     }
   ],
   "losers": [
     {
       "ticker": "LHA.F",
-      "price": 7.468,
-      "change_percent": -0.426666666666667
-    },
-    {
-      "ticker": "SIE.DE",
-      "price": 241.1,
-      "change_percent": -0.22760190357956192
+      "price": 7.382,
+      "change_percent": -1.1515800749866136
     },
     {
       "ticker": "DG.PA",
-      "price": 130.65,
-      "change_percent": -0.0764818355640492
+      "price": 130.5,
+      "change_percent": -0.11481056257176094
     }
   ],
   "biggest_moves": [
     {
       "ticker": "LHA.F",
-      "price": 7.468,
-      "change_percent": -0.426666666666667
+      "price": 7.382,
+      "change_percent": -1.1515800749866136
     },
     {
       "ticker": "BAS.DE",
-      "price": 53.66,
-      "change_percent": 0.2803214352457458
+      "price": 54.17,
+      "change_percent": 0.9504286246738821
     },
     {
       "ticker": "SIE.DE",
-      "price": 241.1,
-      "change_percent": -0.22760190357956192
+      "price": 242.65,
+      "change_percent": 0.6428867689755335
     },
     {
       "ticker": "DG.PA",
-      "price": 130.65,
-      "change_percent": -0.0764818355640492
+      "price": 130.5,
+      "change_percent": -0.11481056257176094
     },
     {
       "ticker": "AAPL",
@@ -100,9 +100,9 @@
     {
       "ticker": "BAS.DE",
       "shares": 1,
-      "price": 53.66,
-      "value": 53.66,
-      "change_percent": 0.2803214352457458
+      "price": 54.17,
+      "value": 54.17,
+      "change_percent": 0.9504286246738821
     },
     {
       "ticker": "KO",
@@ -135,9 +135,9 @@
     {
       "ticker": "LHA.F",
       "shares": 1,
-      "price": 7.468,
-      "value": 7.468,
-      "change_percent": -0.426666666666667
+      "price": 7.382,
+      "value": 7.382,
+      "change_percent": -1.1515800749866136
     },
     {
       "ticker": "MZX.DE",
@@ -156,9 +156,9 @@
     {
       "ticker": "SIE.DE",
       "shares": 1,
-      "price": 241.1,
-      "value": 241.1,
-      "change_percent": -0.22760190357956192
+      "price": 242.65,
+      "value": 242.65,
+      "change_percent": 0.6428867689755335
     },
     {
       "ticker": "TSLA",
@@ -170,10 +170,10 @@
     {
       "ticker": "DG.PA",
       "shares": 1,
-      "price": 130.65,
-      "value": 130.65,
-      "change_percent": -0.0764818355640492
+      "price": 130.5,
+      "value": 130.5,
+      "change_percent": -0.11481056257176094
     }
   ],
-  "total_value": 1896.1379999999997
+  "total_value": 1897.9619999999998
 }
