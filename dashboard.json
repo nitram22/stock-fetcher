@@ -1,27 +1,16 @@
 {
-  "gainers": [
-    {
-      "ticker": "AMZN",
-      "price": 268.42,
-      "change_percent": 0.05964362931485314
-    },
-    {
-      "ticker": "AAPL",
-      "price": 280.25,
-      "change_percent": 0.03926608124509661
-    }
-  ],
+  "gainers": [],
   "losers": [],
   "biggest_moves": [
     {
-      "ticker": "AMZN",
-      "price": 268.42,
-      "change_percent": 0.05964362931485314
-    },
-    {
       "ticker": "AAPL",
       "price": 280.25,
-      "change_percent": 0.03926608124509661
+      "change_percent": 0.0
+    },
+    {
+      "ticker": "AMZN",
+      "price": 268.42,
+      "change_percent": 0.0
     },
     {
       "ticker": "BAS.DE",
@@ -70,14 +59,14 @@
       "shares": 1,
       "price": 280.25,
       "value": 280.25,
-      "change_percent": 0.03926608124509661
+      "change_percent": 0.0
     },
     {
       "ticker": "AMZN",
       "shares": 1,
       "price": 268.42,
       "value": 268.42,
-      "change_percent": 0.05964362931485314
+      "change_percent": 0.0
     },
     {
       "ticker": "BUD",
