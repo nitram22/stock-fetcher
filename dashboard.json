@@ -1,11 +1,28 @@
 {
-  "gainers": [],
-  "losers": [],
+  "gainers": [
+    {
+      "ticker": "NVDA",
+      "price": 215.217,
+      "change_percent": 0.00789962825279941
+    }
+  ],
+  "losers": [
+    {
+      "ticker": "AAPL",
+      "price": 293.257,
+      "change_percent": -0.021478249011314666
+    }
+  ],
   "biggest_moves": [
     {
       "ticker": "AAPL",
-      "price": 293.32,
-      "change_percent": 0.0
+      "price": 293.257,
+      "change_percent": -0.021478249011314666
+    },
+    {
+      "ticker": "NVDA",
+      "price": 215.217,
+      "change_percent": 0.00789962825279941
     },
     {
       "ticker": "AMZN",
@@ -46,20 +63,15 @@
       "ticker": "KO",
       "price": 78.42,
       "change_percent": 0.0
-    },
-    {
-      "ticker": "LHA.F",
-      "price": 8.164,
-      "change_percent": 0.0
     }
   ],
   "portfolio": [
     {
       "ticker": "AAPL",
       "shares": 1,
-      "price": 293.32,
-      "value": 293.32,
-      "change_percent": 0.0
+      "price": 293.257,
+      "value": 293.257,
+      "change_percent": -0.021478249011314666
     },
     {
       "ticker": "AMZN",
@@ -127,9 +139,9 @@
     {
       "ticker": "NVDA",
       "shares": 1,
-      "price": 215.2,
-      "value": 215.2,
-      "change_percent": 0.0
+      "price": 215.217,
+      "value": 215.217,
+      "change_percent": 0.00789962825279941
     },
     {
       "ticker": "SIE.DE",
@@ -153,5 +165,5 @@
       "change_percent": 0.0
     }
   ],
-  "total_value": 2037.0539999999999
+  "total_value": 2037.008
 }
