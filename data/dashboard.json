@@ -1,68 +1,58 @@
 {
   "gainers": [
     {
-      "ticker": "SIE.DE",
-      "price": 272.55,
-      "change_percent": 2.155172413793103
+      "ticker": "MZX.DE",
+      "price": 14.65,
+      "change_percent": 1.7361111111111112
     },
     {
       "ticker": "DG.PA",
-      "price": 126.55,
-      "change_percent": 0.39666798889329635
+      "price": 127.2,
+      "change_percent": 0.5136309758988586
     },
     {
-      "ticker": "BAS.DE",
-      "price": 54.11,
-      "change_percent": 0.20370370370370264
+      "ticker": "SIE.DE",
+      "price": 273.15,
+      "change_percent": 0.22014309301044427
     }
   ],
   "losers": [
     {
-      "ticker": "HPHA.F",
-      "price": 2.68,
-      "change_percent": -4.285714285714274
-    },
-    {
-      "ticker": "MZX.DE",
-      "price": 14.4,
-      "change_percent": -1.0309278350515487
+      "ticker": "BAS.DE",
+      "price": 53.36,
+      "change_percent": -1.3860654222879318
     },
     {
       "ticker": "LHA.F",
-      "price": 8.07,
-      "change_percent": -0.7135826771653522
+      "price": 7.996,
+      "change_percent": -0.9169764560099113
     }
   ],
   "biggest_moves": [
     {
-      "ticker": "HPHA.F",
-      "price": 2.68,
-      "change_percent": -4.285714285714274
-    },
-    {
-      "ticker": "SIE.DE",
-      "price": 272.55,
-      "change_percent": 2.155172413793103
-    },
-    {
       "ticker": "MZX.DE",
-      "price": 14.4,
-      "change_percent": -1.0309278350515487
-    },
-    {
-      "ticker": "LHA.F",
-      "price": 8.07,
-      "change_percent": -0.7135826771653522
-    },
-    {
-      "ticker": "DG.PA",
-      "price": 126.55,
-      "change_percent": 0.39666798889329635
+      "price": 14.65,
+      "change_percent": 1.7361111111111112
     },
     {
       "ticker": "BAS.DE",
-      "price": 54.11,
-      "change_percent": 0.20370370370370264
+      "price": 53.36,
+      "change_percent": -1.3860654222879318
+    },
+    {
+      "ticker": "LHA.F",
+      "price": 7.996,
+      "change_percent": -0.9169764560099113
+    },
+    {
+      "ticker": "DG.PA",
+      "price": 127.2,
+      "change_percent": 0.5136309758988586
+    },
+    {
+      "ticker": "SIE.DE",
+      "price": 273.15,
+      "change_percent": 0.22014309301044427
     },
     {
       "ticker": "AAPL",
@@ -82,6 +72,11 @@
     {
       "ticker": "CVS",
       "price": 98.11,
+      "change_percent": 0.0
+    },
+    {
+      "ticker": "DIS",
+      "price": 104.9,
       "change_percent": 0.0
     }
   ],
@@ -110,9 +105,9 @@
     {
       "ticker": "BAS.DE",
       "shares": 1,
-      "price": 54.11,
-      "value": 54.11,
-      "change_percent": 0.20370370370370264
+      "price": 53.36,
+      "value": 53.36,
+      "change_percent": -1.3860654222879318
     },
     {
       "ticker": "KO",
@@ -140,21 +135,21 @@
       "shares": 1,
       "price": 2.68,
       "value": 2.68,
-      "change_percent": -4.285714285714274
+      "change_percent": 0.0
     },
     {
       "ticker": "LHA.F",
       "shares": 1,
-      "price": 8.07,
-      "value": 8.07,
-      "change_percent": -0.7135826771653522
+      "price": 7.996,
+      "value": 7.996,
+      "change_percent": -0.9169764560099113
     },
     {
       "ticker": "MZX.DE",
       "shares": 1,
-      "price": 14.4,
-      "value": 14.4,
-      "change_percent": -1.0309278350515487
+      "price": 14.65,
+      "value": 14.65,
+      "change_percent": 1.7361111111111112
     },
     {
       "ticker": "NVDA",
@@ -166,9 +161,9 @@
     {
       "ticker": "SIE.DE",
       "shares": 1,
-      "price": 272.55,
-      "value": 272.55,
-      "change_percent": 2.155172413793103
+      "price": 273.15,
+      "value": 273.15,
+      "change_percent": 0.22014309301044427
     },
     {
       "ticker": "TSLA",
@@ -180,10 +175,10 @@
     {
       "ticker": "DG.PA",
       "shares": 1,
-      "price": 126.55,
-      "value": 126.55,
-      "change_percent": 0.39666798889329635
+      "price": 127.2,
+      "value": 127.2,
+      "change_percent": 0.5136309758988586
     }
   ],
-  "total_value": 2081.88
+  "total_value": 2082.5559999999996
 }
