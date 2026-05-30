@@ -1,38 +1,7 @@
 {
   "gainers": [],
-  "losers": [
-    {
-      "ticker": "CVS",
-      "price": 90.98,
-      "change_percent": -0.0439463854097913
-    },
-    {
-      "ticker": "DIS",
-      "price": 101.83,
-      "change_percent": -0.0196367206676446
-    },
-    {
-      "ticker": "BUD",
-      "price": 79.99,
-      "change_percent": -0.012500000000006395
-    }
-  ],
+  "losers": [],
   "biggest_moves": [
-    {
-      "ticker": "CVS",
-      "price": 90.98,
-      "change_percent": -0.0439463854097913
-    },
-    {
-      "ticker": "DIS",
-      "price": 101.83,
-      "change_percent": -0.0196367206676446
-    },
-    {
-      "ticker": "BUD",
-      "price": 79.99,
-      "change_percent": -0.012500000000006395
-    },
     {
       "ticker": "AAPL",
       "price": 312.06,
@@ -49,8 +18,23 @@
       "change_percent": 0.0
     },
     {
+      "ticker": "BUD",
+      "price": 79.99,
+      "change_percent": 0.0
+    },
+    {
+      "ticker": "CVS",
+      "price": 90.98,
+      "change_percent": 0.0
+    },
+    {
       "ticker": "DG.PA",
       "price": 125.05,
+      "change_percent": 0.0
+    },
+    {
+      "ticker": "DIS",
+      "price": 101.83,
       "change_percent": 0.0
     },
     {
@@ -89,7 +73,7 @@
       "shares": 1,
       "price": 79.99,
       "value": 79.99,
-      "change_percent": -0.012500000000006395
+      "change_percent": 0.0
     },
     {
       "ticker": "BAS.DE",
@@ -110,14 +94,14 @@
       "shares": 1,
       "price": 90.98,
       "value": 90.98,
-      "change_percent": -0.0439463854097913
+      "change_percent": 0.0
     },
     {
       "ticker": "DIS",
       "shares": 1,
       "price": 101.83,
       "value": 101.83,
-      "change_percent": -0.0196367206676446
+      "change_percent": 0.0
     },
     {
       "ticker": "HPHA.F",
