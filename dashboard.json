@@ -1,169 +1,174 @@
 {
   "gainers": [
     {
+      "ticker": "NVDA",
+      "price": 219.11,
+      "change_percent": 2.7575857055761497
+    },
+    {
+      "ticker": "SIE.DE",
+      "price": 272.05,
+      "change_percent": 0.5172732311103028
+    },
+    {
       "ticker": "CVS",
-      "price": 94.2799,
-      "change_percent": 3.1847433512093613
-    },
-    {
-      "ticker": "AMZN",
-      "price": 254.015,
-      "change_percent": 1.5978721702263725
-    },
-    {
-      "ticker": "DIS",
-      "price": 100.845,
-      "change_percent": 1.4639299728342874
-    },
-    {
-      "ticker": "LHA.F",
-      "price": 8.386,
-      "change_percent": 0.7690459024273019
-    },
-    {
-      "ticker": "KO",
-      "price": 79.105,
-      "change_percent": 0.43803961401726615
-    },
-    {
-      "ticker": "BUD",
-      "price": 79.33,
-      "change_percent": 0.36690283400808704
-    },
-    {
-      "ticker": "DG.PA",
-      "price": 124.35,
-      "change_percent": 0.3631961259079811
+      "price": 94.575,
+      "change_percent": 0.31300415040746227
     },
     {
       "ticker": "AAPL",
-      "price": 310.63,
-      "change_percent": 0.1192548185392911
-    },
-    {
-      "ticker": "BAS.DE",
-      "price": 50.92,
-      "change_percent": 0.058950677932798456
+      "price": 311.455,
+      "change_percent": 0.26558928628915063
     }
   ],
   "losers": [
     {
-      "ticker": "NVDA",
-      "price": 213.23,
-      "change_percent": -0.707799767171134
+      "ticker": "KO",
+      "price": 76.93,
+      "change_percent": -2.749510144744323
+    },
+    {
+      "ticker": "BUD",
+      "price": 78.1,
+      "change_percent": -1.550485314509018
+    },
+    {
+      "ticker": "MZX.DE",
+      "price": 14.15,
+      "change_percent": -1.393728222996511
+    },
+    {
+      "ticker": "DIS",
+      "price": 99.605,
+      "change_percent": -1.2296097972135405
+    },
+    {
+      "ticker": "DG.PA",
+      "price": 123.55,
+      "change_percent": -0.6433453960595071
     },
     {
       "ticker": "TSLA",
-      "price": 420.91,
-      "change_percent": -0.658484776964825
+      "price": 418.39,
+      "change_percent": -0.5987028105770922
     },
     {
-      "ticker": "SIE.DE",
-      "price": 270.65,
-      "change_percent": -0.44141990068053905
+      "ticker": "BAS.DE",
+      "price": 50.65,
+      "change_percent": -0.530243519245882
+    },
+    {
+      "ticker": "LHA.F",
+      "price": 8.36,
+      "change_percent": -0.3100405437634129
+    },
+    {
+      "ticker": "AMZN",
+      "price": 253.74,
+      "change_percent": -0.10826132315019871
     }
   ],
   "biggest_moves": [
     {
-      "ticker": "CVS",
-      "price": 94.2799,
-      "change_percent": 3.1847433512093613
-    },
-    {
-      "ticker": "AMZN",
-      "price": 254.015,
-      "change_percent": 1.5978721702263725
-    },
-    {
-      "ticker": "DIS",
-      "price": 100.845,
-      "change_percent": 1.4639299728342874
-    },
-    {
-      "ticker": "LHA.F",
-      "price": 8.386,
-      "change_percent": 0.7690459024273019
-    },
-    {
       "ticker": "NVDA",
-      "price": 213.23,
-      "change_percent": -0.707799767171134
-    },
-    {
-      "ticker": "TSLA",
-      "price": 420.91,
-      "change_percent": -0.658484776964825
-    },
-    {
-      "ticker": "SIE.DE",
-      "price": 270.65,
-      "change_percent": -0.44141990068053905
+      "price": 219.11,
+      "change_percent": 2.7575857055761497
     },
     {
       "ticker": "KO",
-      "price": 79.105,
-      "change_percent": 0.43803961401726615
+      "price": 76.93,
+      "change_percent": -2.749510144744323
     },
     {
       "ticker": "BUD",
-      "price": 79.33,
-      "change_percent": 0.36690283400808704
+      "price": 78.1,
+      "change_percent": -1.550485314509018
+    },
+    {
+      "ticker": "MZX.DE",
+      "price": 14.15,
+      "change_percent": -1.393728222996511
+    },
+    {
+      "ticker": "DIS",
+      "price": 99.605,
+      "change_percent": -1.2296097972135405
     },
     {
       "ticker": "DG.PA",
-      "price": 124.35,
-      "change_percent": 0.3631961259079811
+      "price": 123.55,
+      "change_percent": -0.6433453960595071
+    },
+    {
+      "ticker": "TSLA",
+      "price": 418.39,
+      "change_percent": -0.5987028105770922
+    },
+    {
+      "ticker": "BAS.DE",
+      "price": 50.65,
+      "change_percent": -0.530243519245882
+    },
+    {
+      "ticker": "SIE.DE",
+      "price": 272.05,
+      "change_percent": 0.5172732311103028
+    },
+    {
+      "ticker": "CVS",
+      "price": 94.575,
+      "change_percent": 0.31300415040746227
     }
   ],
   "portfolio": [
     {
       "ticker": "AAPL",
       "shares": 1,
-      "price": 310.63,
-      "value": 310.63,
-      "change_percent": 0.1192548185392911
+      "price": 311.455,
+      "value": 311.455,
+      "change_percent": 0.26558928628915063
     },
     {
       "ticker": "AMZN",
       "shares": 1,
-      "price": 254.015,
-      "value": 254.015,
-      "change_percent": 1.5978721702263725
+      "price": 253.74,
+      "value": 253.74,
+      "change_percent": -0.10826132315019871
     },
     {
       "ticker": "BUD",
       "shares": 1,
-      "price": 79.33,
-      "value": 79.33,
-      "change_percent": 0.36690283400808704
+      "price": 78.1,
+      "value": 78.1,
+      "change_percent": -1.550485314509018
     },
     {
       "ticker": "BAS.DE",
       "shares": 1,
-      "price": 50.92,
-      "value": 50.92,
-      "change_percent": 0.058950677932798456
+      "price": 50.65,
+      "value": 50.65,
+      "change_percent": -0.530243519245882
     },
     {
       "ticker": "KO",
       "shares": 1,
-      "price": 79.105,
-      "value": 79.105,
-      "change_percent": 0.43803961401726615
+      "price": 76.93,
+      "value": 76.93,
+      "change_percent": -2.749510144744323
     },
     {
       "ticker": "CVS",
       "shares": 1,
-      "price": 94.2799,
-      "value": 94.2799,
-      "change_percent": 3.1847433512093613
+      "price": 94.575,
+      "value": 94.575,
+      "change_percent": 0.31300415040746227
     },
     {
       "ticker": "DIS",
       "shares": 1,
-      "price": 100.845,
-      "value": 100.845,
-      "change_percent": 1.4639299728342874
+      "price": 99.605,
+      "value": 99.605,
+      "change_percent": -1.2296097972135405
     },
     {
       "ticker": "HPHA.F",
@@ -175,45 +180,45 @@
     {
       "ticker": "LHA.F",
       "shares": 1,
-      "price": 8.386,
-      "value": 8.386,
-      "change_percent": 0.7690459024273019
+      "price": 8.36,
+      "value": 8.36,
+      "change_percent": -0.3100405437634129
     },
     {
       "ticker": "MZX.DE",
       "shares": 1,
-      "price": 14.35,
-      "value": 14.35,
-      "change_percent": 0.0
+      "price": 14.15,
+      "value": 14.15,
+      "change_percent": -1.393728222996511
     },
     {
       "ticker": "NVDA",
       "shares": 1,
-      "price": 213.23,
-      "value": 213.23,
-      "change_percent": -0.707799767171134
+      "price": 219.11,
+      "value": 219.11,
+      "change_percent": 2.7575857055761497
     },
     {
       "ticker": "SIE.DE",
       "shares": 1,
-      "price": 270.65,
-      "value": 270.65,
-      "change_percent": -0.44141990068053905
+      "price": 272.05,
+      "value": 272.05,
+      "change_percent": 0.5172732311103028
     },
     {
       "ticker": "TSLA",
       "shares": 1,
-      "price": 420.91,
-      "value": 420.91,
-      "change_percent": -0.658484776964825
+      "price": 418.39,
+      "value": 418.39,
+      "change_percent": -0.5987028105770922
     },
     {
       "ticker": "DG.PA",
       "shares": 1,
-      "price": 124.35,
-      "value": 124.35,
-      "change_percent": 0.3631961259079811
+      "price": 123.55,
+      "value": 123.55,
+      "change_percent": -0.6433453960595071
     }
   ],
-  "total_value": 2023.6508999999999
+  "total_value": 2023.3149999999998
 }
