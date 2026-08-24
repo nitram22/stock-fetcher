@@ -1,7 +1,18 @@
 {
-  "gainers": [],
+  "gainers": [
+    {
+      "ticker": "LHA.F",
+      "price": 7.634,
+      "change_percent": 0.44736842105264074
+    }
+  ],
   "losers": [],
   "biggest_moves": [
+    {
+      "ticker": "LHA.F",
+      "price": 7.634,
+      "change_percent": 0.44736842105264074
+    },
     {
       "ticker": "AAPL",
       "price": 309.35,
@@ -45,11 +56,6 @@
     {
       "ticker": "KO",
       "price": 91.1,
-      "change_percent": 0.0
-    },
-    {
-      "ticker": "LHA.F",
-      "price": 7.6,
       "change_percent": 0.0
     }
   ],
@@ -113,9 +119,9 @@
     {
       "ticker": "LHA.F",
       "shares": 1,
-      "price": 7.6,
-      "value": 7.6,
-      "change_percent": 0.0
+      "price": 7.634,
+      "value": 7.634,
+      "change_percent": 0.44736842105264074
     },
     {
       "ticker": "MZX.DE",
@@ -153,5 +159,5 @@
       "change_percent": 0.0
     }
   ],
-  "total_value": 1992.0800000000002
+  "total_value": 1992.1139999999998
 }
