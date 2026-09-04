@@ -1,48 +1,48 @@
 {
   "gainers": [
     {
-      "ticker": "BUD",
-      "price": 80.22,
-      "change_percent": 0.02992667963489564
+      "ticker": "LHA.F",
+      "price": 7.736,
+      "change_percent": 0.5197505197505202
     },
     {
-      "ticker": "CVS",
-      "price": 97.2,
-      "change_percent": 0.0051442975461800135
+      "ticker": "SIE.DE",
+      "price": 270.9,
+      "change_percent": 0.11086474501106967
     }
   ],
   "losers": [
     {
-      "ticker": "KO",
-      "price": 88.81,
-      "change_percent": -0.033768572714994526
+      "ticker": "HPHA.F",
+      "price": 2.46,
+      "change_percent": -1.2048192771084436
     },
     {
-      "ticker": "DIS",
-      "price": 107.16,
-      "change_percent": -0.009330969487734549
+      "ticker": "BAS.DE",
+      "price": 53.1,
+      "change_percent": -0.7662119230050395
     }
   ],
   "biggest_moves": [
     {
-      "ticker": "KO",
-      "price": 88.81,
-      "change_percent": -0.033768572714994526
+      "ticker": "HPHA.F",
+      "price": 2.46,
+      "change_percent": -1.2048192771084436
     },
     {
-      "ticker": "BUD",
-      "price": 80.22,
-      "change_percent": 0.02992667963489564
+      "ticker": "BAS.DE",
+      "price": 53.1,
+      "change_percent": -0.7662119230050395
     },
     {
-      "ticker": "DIS",
-      "price": 107.16,
-      "change_percent": -0.009330969487734549
+      "ticker": "LHA.F",
+      "price": 7.736,
+      "change_percent": 0.5197505197505202
     },
     {
-      "ticker": "CVS",
-      "price": 97.2,
-      "change_percent": 0.0051442975461800135
+      "ticker": "SIE.DE",
+      "price": 270.9,
+      "change_percent": 0.11086474501106967
     },
     {
       "ticker": "AAPL",
@@ -55,8 +55,13 @@
       "change_percent": 0.0
     },
     {
-      "ticker": "BAS.DE",
-      "price": 53.51,
+      "ticker": "BUD",
+      "price": 80.22,
+      "change_percent": 0.0
+    },
+    {
+      "ticker": "CVS",
+      "price": 97.2,
       "change_percent": 0.0
     },
     {
@@ -65,13 +70,8 @@
       "change_percent": 0.0
     },
     {
-      "ticker": "HPHA.F",
-      "price": 2.49,
-      "change_percent": 0.0
-    },
-    {
-      "ticker": "LHA.F",
-      "price": 7.696,
+      "ticker": "DIS",
+      "price": 107.16,
       "change_percent": 0.0
     }
   ],
@@ -95,49 +95,49 @@
       "shares": 1,
       "price": 80.22,
       "value": 80.22,
-      "change_percent": 0.02992667963489564
+      "change_percent": 0.0
     },
     {
       "ticker": "BAS.DE",
       "shares": 1,
-      "price": 53.51,
-      "value": 53.51,
-      "change_percent": 0.0
+      "price": 53.1,
+      "value": 53.1,
+      "change_percent": -0.7662119230050395
     },
     {
       "ticker": "KO",
       "shares": 1,
       "price": 88.81,
       "value": 88.81,
-      "change_percent": -0.033768572714994526
+      "change_percent": 0.0
     },
     {
       "ticker": "CVS",
       "shares": 1,
       "price": 97.2,
       "value": 97.2,
-      "change_percent": 0.0051442975461800135
+      "change_percent": 0.0
     },
     {
       "ticker": "DIS",
       "shares": 1,
       "price": 107.16,
       "value": 107.16,
-      "change_percent": -0.009330969487734549
+      "change_percent": 0.0
     },
     {
       "ticker": "HPHA.F",
       "shares": 1,
-      "price": 2.49,
-      "value": 2.49,
-      "change_percent": 0.0
+      "price": 2.46,
+      "value": 2.46,
+      "change_percent": -1.2048192771084436
     },
     {
       "ticker": "LHA.F",
       "shares": 1,
-      "price": 7.696,
-      "value": 7.696,
-      "change_percent": 0.0
+      "price": 7.736,
+      "value": 7.736,
+      "change_percent": 0.5197505197505202
     },
     {
       "ticker": "MZX.DE",
@@ -156,9 +156,9 @@
     {
       "ticker": "SIE.DE",
       "shares": 1,
-      "price": 270.6,
-      "value": 270.6,
-      "change_percent": 0.0
+      "price": 270.9,
+      "value": 270.9,
+      "change_percent": 0.11086474501106967
     },
     {
       "ticker": "TSLA",
@@ -175,5 +175,5 @@
       "change_percent": 0.0
     }
   ],
-  "total_value": 2026.811
+  "total_value": 2026.711
 }
