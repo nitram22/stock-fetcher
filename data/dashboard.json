@@ -1,49 +1,7 @@
 {
-  "gainers": [
-    {
-      "ticker": "KO",
-      "price": 93.9,
-      "change_percent": 0.04261666311528473
-    },
-    {
-      "ticker": "BUD",
-      "price": 82.59,
-      "change_percent": 0.024221872350745105
-    },
-    {
-      "ticker": "DIS",
-      "price": 110.59,
-      "change_percent": 0.018088088993407102
-    }
-  ],
-  "losers": [
-    {
-      "ticker": "CVS",
-      "price": 92.36,
-      "change_percent": -0.010826025765946861
-    }
-  ],
+  "gainers": [],
+  "losers": [],
   "biggest_moves": [
-    {
-      "ticker": "KO",
-      "price": 93.9,
-      "change_percent": 0.04261666311528473
-    },
-    {
-      "ticker": "BUD",
-      "price": 82.59,
-      "change_percent": 0.024221872350745105
-    },
-    {
-      "ticker": "DIS",
-      "price": 110.59,
-      "change_percent": 0.018088088993407102
-    },
-    {
-      "ticker": "CVS",
-      "price": 92.36,
-      "change_percent": -0.010826025765946861
-    },
     {
       "ticker": "AAPL",
       "price": 343.46,
@@ -60,13 +18,33 @@
       "change_percent": 0.0
     },
     {
+      "ticker": "BUD",
+      "price": 82.59,
+      "change_percent": 0.0
+    },
+    {
+      "ticker": "CVS",
+      "price": 92.36,
+      "change_percent": 0.0
+    },
+    {
       "ticker": "DG.PA",
       "price": 108.05,
       "change_percent": 0.0
     },
     {
+      "ticker": "DIS",
+      "price": 110.59,
+      "change_percent": 0.0
+    },
+    {
       "ticker": "HPHA.F",
       "price": 2.16,
+      "change_percent": 0.0
+    },
+    {
+      "ticker": "KO",
+      "price": 93.9,
       "change_percent": 0.0
     },
     {
@@ -95,7 +73,7 @@
       "shares": 1,
       "price": 82.59,
       "value": 82.59,
-      "change_percent": 0.024221872350745105
+      "change_percent": 0.0
     },
     {
       "ticker": "BAS.DE",
@@ -109,21 +87,21 @@
       "shares": 1,
       "price": 93.9,
       "value": 93.9,
-      "change_percent": 0.04261666311528473
+      "change_percent": 0.0
     },
     {
       "ticker": "CVS",
       "shares": 1,
       "price": 92.36,
       "value": 92.36,
-      "change_percent": -0.010826025765946861
+      "change_percent": 0.0
     },
     {
       "ticker": "DIS",
       "shares": 1,
       "price": 110.59,
       "value": 110.59,
-      "change_percent": 0.018088088993407102
+      "change_percent": 0.0
     },
     {
       "ticker": "HPHA.F",
